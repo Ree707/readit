@@ -1,12 +1,13 @@
 {
-  "name": "master-electron",
+  "name": "readit",
   "version": "1.0.0",
-  "description": "Master Electron Course Code",
+  "description": "Master Electron project Code",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "reset": "git reset --hard"
+    "reset": "git reset --hard",
+    "build": "electron-builder --win zip"
   },
   "repository": "https://github.com/stackacademytv/master-electron",
   "keywords": [
@@ -14,11 +15,14 @@
     "Master Electron",
     "demo"
   ],
-  "author": "GitHub, Stackacademytv",
+  "author": "Reema",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^9.0.0",
+    "electron-builder": "^23.6.0",
     "nodemon": "^2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  }
 }
